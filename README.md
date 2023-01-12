@@ -9,5 +9,8 @@ npm i gt-template -g
 
 ## 建立專案
 ```shell=
-npx gt-template [projectName]
+npx gt-template@[版本號] [projectName]
+
+// ex. npx gt-template@0.0.7-beta Hello
+
 ```

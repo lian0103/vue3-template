@@ -16,10 +16,12 @@ if (!projectName) {
 // step1 新增專案夾
 const currentDir = process.cwd();
 const projectDir = path.resolve(currentDir, projectName);
+console.log('projectDir',projectDir)
 fs.mkdirSync(projectDir, { recursive: true });
 
 // step2 從模板夾複製
 const templateDir = path.resolve(__dirname, 'template');
+console.log('templateDir',templateDir)
 fs.cpSync(templateDir, projectDir, { recursive: true });
 
 // step3 處理專案文件
