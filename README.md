@@ -4,7 +4,7 @@
 
 ## 使用
 ```shell=
-npm i gt-template
+npm i gt-template -g
 ```
 
 ## 建立專案
