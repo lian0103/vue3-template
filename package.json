@@ -1,0 +1,12 @@
+{
+  "name": "gt-template",
+  "version": "0.0.5",
+  "bin": {
+    "vue3-start": "./index.js"
+  },
+  "dependencies": {
+    "cross-spawn": "^7.0.3",
+    "fs": "^0.0.1-security",
+    "gt-template": "^0.0.2"
+  }
+}
