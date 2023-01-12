@@ -6,7 +6,6 @@
   },
   "dependencies": {
     "cross-spawn": "^7.0.3",
-    "fs": "^0.0.1-security",
-    "gt-template": "^0.0.2"
+    "fs": "^0.0.1-security"
   }
 }
