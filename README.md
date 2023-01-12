@@ -15,7 +15,7 @@ npx gt-template@[版本號] [projectName] [template target]
 
 ```
 ### template target
-目前只有一版，預測為/template內容
+目前只有一版，預設為/template內容
 
 ## NPM
 [NPM倉庫](https://www.npmjs.com/package/gt-template)
