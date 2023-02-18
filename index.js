@@ -7,10 +7,13 @@ const path = require('path');
 
 const TemplateMap = {
     default: 'template',
-    elementPlus:'elementPlus'
+    elementPlus:'TemplateElementPlus'
 };
 
 const projectName = process.argv[2];
+
+console.log('projectName',projectName)
+console.log('template',process.argv[3])
 
 const targetTemplate =
     process.argv[3] && Object.keys(TemplateMap).includes(process.argv[3]) ? process.argv[3] : 'default';
