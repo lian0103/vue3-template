@@ -7,6 +7,7 @@ const path = require('path');
 
 const TemplateMap = {
     default: 'template',
+    elementPlus:'elementPlus'
 };
 
 const projectName = process.argv[2];
