@@ -1,4 +1,5 @@
 <script setup>
+import { Menu as IconMenu, Message, Setting } from '@element-plus/icons-vue';
 const item = {
     date: '2016-05-02',
     name: 'Tom',
@@ -128,7 +129,7 @@ const tableData = ref(Array.from({ length: 20 }).fill(item));
 }
 
 .el-aside {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .el-header {

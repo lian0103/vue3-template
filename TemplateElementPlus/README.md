@@ -10,7 +10,7 @@
     已封裝 ./utils/request.js
 - vueuse/core
 - Gsap
-- Fontawesome v5.15.4 (CDN引入)
+- @element-plus/icons-vue
 - SCSS
 
 ## 啟動
