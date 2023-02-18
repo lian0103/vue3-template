@@ -1,7 +1,7 @@
 # 專案模板
-選用:
 - Vite
 - Vue3
+- Vue-router
 - Axios
 - vueuse/core
 - Gsap
