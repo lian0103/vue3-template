@@ -11,7 +11,6 @@
 - vueuse/core
 - Gsap
 - Fontawesome v5.15.4 (CDN引入)
-- TailwindCSS
 - SCSS
 
 ## 啟動
