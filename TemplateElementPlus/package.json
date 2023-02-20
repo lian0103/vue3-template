@@ -18,6 +18,8 @@
     "autoprefixer": "^10.4.13",
     "axios": "^1.2.1",
     "dayjs": "^1.11.7",
+    "eslint": "^8.34.0",
+    "eslint-plugin-vue": "^9.9.0",
     "gsap": "^3.11.3",
     "postcss": "^8.4.19",
     "postcss-import": "^15.0.0",

@@ -1,0 +1,12 @@
+{
+  "parser": "babel",
+  "useTabs": false,
+  "tabWidth": 2,
+  "endOfLine": "lf",
+  "printWidth": 120,
+  "semi": true,
+  "singleQuote": true,
+  "wrapAttributes": true,
+  "sortAttributes": true,
+  "trailingComma": "none"
+}
