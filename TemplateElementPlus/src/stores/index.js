@@ -1,7 +1,4 @@
 import { ref } from 'vue';
 
-export const appInfo = ref({
+export const AppInfo = ref({});
 
-});
-
-export default {};
