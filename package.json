@@ -1,6 +1,6 @@
 {
   "name": "gt-template",
-  "version": "0.0.10-beta-1",
+  "version": "0.0.10-beta-2",
   "bin": {
     "vue3-start": "./index.js"
   },
