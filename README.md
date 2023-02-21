@@ -38,7 +38,7 @@ npx gt-template@[版本號] [projectName] [template]
 - eslint-plugin-vue
 - Prettier
 
-**登入與權限驗證流程**
+**登入與權限驗證流程**      
 透過Vue-Router Guard管控、Web LocalStorage和共用Stores來實現。
 
 

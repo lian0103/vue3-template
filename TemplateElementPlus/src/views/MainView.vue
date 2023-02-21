@@ -46,9 +46,10 @@ const defaultActive = computed(() => {
 					<span class="logout-text" @click="handleLogout">登出</span>
 				</div>
 			</el-header>
-
 			<el-main>
-				<router-view name="mainView"></router-view>
+				<Transition>
+					<router-view name="mainView"></router-view>
+				</Transition>
 			</el-main>
 		</el-container>
 	</el-container>
