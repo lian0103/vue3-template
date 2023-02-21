@@ -1,26 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Permission from '../stores/permission';
-
-export const needPermisionRoute = [
-  {
-    path: '/main',
-    meta: {
-      title: '使用者'
-    },
-    components: {
-      mainView: () => import('../views/PageA.vue')
-    }
-  },
-  {
-    path: '/auth',
-    meta: {
-      title: '權限'
-    },
-    components: {
-      mainView: () => import('../views/PageB.vue')
-    }
-  }
-];
+import needPermissionRoutes from './needPermissionRoutes';
 
 export const routes = [
   {
@@ -31,7 +11,7 @@ export const routes = [
   {
     path: '/',
     name: 'mainView',
-    children: [...needPermisionRoute],
+    children: [...needPermissionRoutes],
     component: () => import('../views/MainView.vue')
   },
   {
@@ -41,7 +21,7 @@ export const routes = [
   }
 ];
 
-console.log(routes);
+// console.log(routes);
 
 const router = createRouter({
   history: createWebHistory(),
@@ -50,26 +30,18 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   const { path } = to;
-  // console.log('path', path);
 
   // 權限紀錄
-  if (localStorage.getItem(Permission.name) && Permission.getValidRoutes().length === 0) {
-    Permission.setValidRoutes(JSON.parse(localStorage.getItem(Permission.name)));
+  if (localStorage.getItem(Permission.name) && Permission.get().length === 0) {
+    Permission.set(JSON.parse(localStorage.getItem(Permission.name)));
   }
 
   // 權限判斷
-  if (path != '/login' && Permission.getValidRoutes().length === 0) {
-    console.log('iNNN?');
+  if (path != '/login' && Permission.get().length === 0) {
     next('/login');
   }
 
   next();
-});
-
-router.afterEach((to, from) => {
-  const toDepth = to.path.split('/').length;
-  const fromDepth = from.path.split('/').length;
-  to.meta.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left';
 });
 
 export default router;

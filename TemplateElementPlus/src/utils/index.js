@@ -34,8 +34,4 @@ export const base64ImgtoFile = (dataurl, fileName = 'file') => {
     return new File([u8arr], `${fileName}.${suffix}`, { type: mime });
 };
 
-export const replaceAllDash = (str) => {
-    return str.replaceAll('-', '');
-};
-
 export default {};

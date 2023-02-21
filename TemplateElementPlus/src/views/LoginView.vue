@@ -1,6 +1,6 @@
 <script setup>
 import Permission from '../stores/permission';
-import { needPermisionRoute } from '../routers/index'; //for demo
+import needPermissionRoutes from '../routers/needPermissionRoutes'; //for demo
 import { useRouter } from 'vue-router';
 
 const Router = useRouter();
@@ -46,10 +46,10 @@ const rules = {
 
 const simulateLogin = () => {
   return new Promise((resolve, reject) => {
-    // real needPermisionRoute should from API data
+    // real data should from backend 
     if (model.username === validCredentials.username && model.password === validCredentials.password) {
-      Permission.setValidRoutes(needPermisionRoute);
-      localStorage.setItem(Permission.name,JSON.stringify(needPermisionRoute));
+      Permission.set(needPermissionRoutes);
+      localStorage.setItem(Permission.name,JSON.stringify(needPermissionRoutes));
       setTimeout(resolve, 500);
     } else {
       setTimeout(reject, 500);

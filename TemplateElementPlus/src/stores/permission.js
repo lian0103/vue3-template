@@ -3,10 +3,10 @@ import { ref } from 'vue';
 const Permission = {
   name: import.meta.env.VITE_APP_PERMISSION,
   validRoutes: ref([]),
-  getValidRoutes: () => {
+  get: () => {
     return Permission.validRoutes.value;
   },
-  setValidRoutes: (arr = []) => {
+  set: (arr = []) => {
     Permission.validRoutes.value = arr;
   },
   reset: () => {
