@@ -1,5 +1,5 @@
 # GT前端專案模板
-版本號: v0.0.10-beta-1      
+版本號: v0.0.10-beta-4      
 整合常用基底Vite、TailwindCSS、SCSS、Auto Import等配置。     
 
 
@@ -42,6 +42,9 @@ npx gt-template@[版本號] [projectName] [template]
 透過Vue-Router Guard管控、Web LocalStorage和共用Stores來實現。
 
 
+**官方推薦Pinia**
+優點之一 dev tool整合
+![](https://i.imgur.com/uWnUGKd.png)
 
 ## VSCODE設定
 
